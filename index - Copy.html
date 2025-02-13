@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Surprise</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcome" class="page">
+        <div class="teddy-bear animated">🧸</div>
+        <div class="thought-bubble">
+            Do you have a valentine?
+            <button class="love-button" onclick="goToPage('damn')">❤️ Yes</button>
+            <button class="love-button" onclick="goToPage('cont')">❤️ No</button>
+        </div>
+    </div>
+
+    <div id="cont" class="page">
+        <div class="animated-hearts">💖💖💖</div>
+        <div class="teddy-bear animated">🧸</div>
+        <div class="thought-bubble lime-green">
+            So will you be my valentine?
+            <button class="love-button" onclick="goToPage('happy')">❤️ Yes</button>
+            <button class="love-button" onclick="goToPage('damn')">❤️ No</button>
+        </div>
+    </div>
+
+    <div id="damn" class="page">
+        <div class="cute-cartoons">😊🎈🌈</div>
+        <div class="thought-bubble">
+            Tell you what, I have a valentine too🤭😘
+            <button class="love-button" onclick="goToPage('vibe')">❤️ Continue</button>
+        </div>
+    </div>
+
+    <div id="happy" class="page">
+        <div class="cute-emojis">🐼🐨🐯</div>
+        <div class="thought-bubble">
+            Thanks but choose no😘🥲
+            <button class="love-button" onclick="goToPage('restart')">❤️ Sure</button>
+            <button class="love-button" onclick="goToPage('give')">❤️ I won't</button>
+        </div>
+    </div>
+
+    <div id="vibe" class="page">
+        <div class="cute-animations">🌟✨🎉</div>
+        <div class="thought-bubble">
+            Just kidding😅
+            <button class="love-button" onclick="goToPage('final')">❤️ Continue</button>
+        </div>
+    </div>
+
+    <div id="restart" class="page">
+        <div class="cute-animations">🌸🌺🌻</div>
+        <div class="thought-bubble">
+            Will you be my valentine?
+            <button class="love-button" onclick="goToPage('sassy')">❤️ No</button>
+        </div>
+    </div>
+
+    <div id="give" class="page">
+        <div class="cute-animations">🎀🎁🍬</div>
+        <div class="thought-bubble">
+            Appreciate the love, but I'm already booked
+            <button class="love-button" onclick="goToPage('sassy')">❤️ It's fine</button>
+        </div>
+    </div>
+
+    <div id="sassy" class="page">
+        <div class="thought-bubble purple-pink">
+            I wish you luck tho😘🫶🏼
+            <button class="love-button" onclick="goToPage('final')">❤️ Continue</button>
+        </div>
+    </div>
+
+    <div id="final" class="page">
+        <div class="dancing-bear animated">🐻💃</div>
+        <div class="hearts animated">💖💖💖💖💖</div>
+        <h1 class="cute-font">Good luck on your valentine dates</h1>
+        <h2 class="calligraphy-font">HAPPY VALENTINES💘💌💝💖</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
